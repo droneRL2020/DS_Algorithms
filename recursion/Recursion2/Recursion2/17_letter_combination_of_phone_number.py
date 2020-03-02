@@ -20,7 +20,9 @@ def letterCombinations(digits):
         for c in mp[digit_in]:
             rec(digits, cur_string + c)
         return A
-    return rec("23")
+    return rec(digits)
 
 if __name__ == "__main__":
-      print(letterCombinations("23"))
+    #test1. digits="23"
+    digits = "23"
+    print(letterCombinations(digits))
